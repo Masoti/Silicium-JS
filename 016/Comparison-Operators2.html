@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison-Operators2 | Modern JS</title>
+</head>
+<body>
+    
+    <script>
+        let access = false
+        console.log(access);
+        let age = 23
+        console.log(age);
+        access = (age >= 18) ? true : false
+        console.log(access);
+        age = 15
+        access = (age >= 18) ? true : false
+        console.log(access);
+        let site = "https://silicium.ir"
+        console.log(site.includes("https://"));
+        let msg;
+        msg = site.includes("https://") ? "This is a secure site" : "This is not a secure site"
+        console.log(msg);
+        site = "http://silicium.ir"
+        console.log(site.includes("https://"));
+        msg = site.includes("https://") ? "This is a secure site" : "This is not a secure site"
+        console.log(msg);
+    </script>
+</body>
+</html>

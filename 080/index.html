@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Locale Storage</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<script>
+		// let person = {
+		// 	firstname: "Mehran",
+		// 	lastname: "Tarif",
+		// 	age: 23,
+		// 	access: true,
+		// }
+
+		// person = JSON.stringify(person)
+		// console.log(person)
+
+		// localStorage.setItem("person", person)
+
+		let person = localStorage.getItem("person")
+		person = JSON.parse(person)
+		// console.log(person.age + 1)
+		if (person.access) {
+			console.log("You have access.")
+		} else {
+			console.log("You have not access.")
+		}
+	</script>
+</body>
+</html>

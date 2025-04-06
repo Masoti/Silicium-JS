@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>callback, promise and async | Modern JS!</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="w-50 mx-auto my-3 text-center">
+			
+		</div>
+	</div>
+
+	<script>
+		// function getNumber () {
+		// 	return new Promise(resolve => {
+		// 		for (var i = 0; i < 1000 + 1; i++) {
+		// 			if (i == 1000) {
+		// 				resolve(i)
+		// 			}
+		// 		}
+		// 	})
+		// }
+
+		function getNumber () {
+			for (var i = 0; i < 1000 + 1; i++) {
+				if (i == 1000) {
+					return i
+				}
+			}
+		}
+
+		async function init () {
+			return await getNumber()
+		}
+
+
+		console.log(1)
+		console.log(2)
+
+		// getNumber().then(value => console.log(value))
+		init().then(value => console.log(value))
+
+		console.log(3)
+		console.log(4)
+
+	</script>
+</body>
+</html>

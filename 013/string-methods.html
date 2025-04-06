@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>String Methods | Modern JS</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+	<script>
+		let data = "JavaScript, often abbreviated as JS, is a programming language and core technology of the World Wide Web, alongside HTML and CSS. Ninety-nine percent of websites use JavaScript on the client side for webpage behavior. Web browsers have a dedicated JavaScript engine ";
+		let name = "        Masoud              ";
+		let num1 = "77";
+		data = data.toLowerCase()
+
+		console.log(data);
+		console.log(data.length);
+		console.log(data[1]);
+		console.log(data[0]);
+		console.log(data.slice(0, 10));
+		console.log(data.substr(10, 7));
+		console.log(data.includes('Javascript'));
+		console.log(data.includes('JavaScript'));
+		console.log(data.includes('javascript'));
+		console.log(data.toLowerCase());
+		console.log(data.toUpperCase());
+		console.log(data.search("js"));
+		console.log(data.substr(33, 2));
+		console.log(data.replace("javascript", "JS"));
+
+		console.log(name);
+		console.log(name.trim());
+		console.log(name.startsWith("        M"));
+		console.log(name.endsWith("        M"));
+		console.log(num1.padStart(4, 0));
+		console.log(num1.padEnd(4, 0));
+
+		// let data = "8"
+		// console.log(data.padEnd(4, 0))
+	</script>
+
+</body>
+
+</html>
