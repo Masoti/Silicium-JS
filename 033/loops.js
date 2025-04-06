@@ -15,6 +15,10 @@ let students = ["Mehran", "Sima", "Reza", "Hasan", "Ali", "Sara"]
 // }
 
 students.forEach((student, index) => {
+	console.log(`Hello ${student}`);
+});
+
+students.forEach((student, index) => {
 	console.log(`${index + 1} - ${student}`);
 	// ..
 	// ..
