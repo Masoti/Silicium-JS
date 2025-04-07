@@ -6,3 +6,10 @@ function say_hello () {
 say_hello();
 say_hello();
 say_hello();
+
+
+function test () {
+	console.log("Test function")
+}
+test();
+test();

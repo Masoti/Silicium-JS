@@ -17,27 +17,39 @@
 
 
 
+// let i = 0;
+// while (i < 20) {
+// 	i++;
 
-let i = 0;
-while (i < 20) {
-	i++;
-
-	if (i % 2 == 0 && i!=10) {
-		console.log(i);
-	}
-}
-
+// 	if (i % 2 == 0 && i!=10) {
+// 		console.log(i);
+// 	}
+// }
 
 // let i = 0;
 // while (i < 20) {
 // 	i++;
 
 // 	if (i == 10) {
-// 		// continue;
-// 		break;
+// 		continue;
 // 	}
-
-// 	if (i % 2 == 0 && i!=10) {
+// 	if (i % 2 == 0) {
 // 		console.log(i);
 // 	}
 // }
+
+
+
+let i = 0;
+while (i < 20) {
+	i++;
+
+	if (i == 10) {
+		// continue;
+		break;
+	}
+
+	if (i % 2 == 0 && i!=10) {
+		console.log(i);
+	}
+}
