@@ -1,8 +1,8 @@
 let student = {
-	firstname: "Mehran",
-	lastname: "Tarif",
-	age: 23,
-	fields: ["programming", "nursing"],
+	firstname: "Masoud",
+	lastname: "Kakouei",
+	age: 37,
+	fields: ["programming", "musician", "photographer", "writer", "teacher"],
 	status: true,
 
 	fullname() {
@@ -14,12 +14,12 @@ let student = {
 	},
 
 	showFields() {
-		this.fields.forEach((field, index) => {
-			console.log(`${index + 1}. ${field}`)
+		this.fields.forEach((field, number) => {
+			console.log(`${number + 1}. ${field}`)
 		});
 	}
 }
 
 // console.log(student.fullname())
-// student.sayHello()
+student.sayHello()
 student.showFields()

@@ -1,4 +1,4 @@
-// console.log(Number)
+console.log(Number)
 // console.log(Number.EPSILON)
 // console.log(Number.MAX_SAFE_INTEGER)
 // console.log(Number.MAX_VALUE * 10)
@@ -24,4 +24,4 @@
 // console.log(Math.round(5.49))
 // console.log(Math.round(Math.random() * 5))
 
-console.log(Date.now())
+// console.log(Date.now())
