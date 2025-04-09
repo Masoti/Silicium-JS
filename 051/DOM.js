@@ -9,6 +9,6 @@
 // content[0].style.fontSize = '25px'
 
 let paragraphs = document.getElementsByTagName("p")
-// console.log(paragraphs)
+console.log(paragraphs)
 // console.log(paragraphs[0].innerText)
-paragraphs[0].innerText = "Edited: Paragraph Edited by JS!"
+// paragraphs[0].innerText = "Edited: Paragraph Edited by JS!"

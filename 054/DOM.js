@@ -11,10 +11,25 @@
 // console.log(list.innerText)
 // console.log(list.textContent)
 
-let lists = document.querySelectorAll("li")
+// let lists = document.querySelectorAll("li")
 
-lists.forEach(list => {
-	if (list.textContent.includes(" new")) {
-		list.innerHTML += ` <span class="badge badge-danger">new</span>`
-	}
+// lists.forEach(list => {
+// 	if (list.textContent.includes(" new")) {
+// 		list.innerHTML += ` <span class="badge badge-danger">new</span>`
+// 	}
+// })
+
+
+
+let people = [
+	{neme: "Masoud", new: true},
+	{neme: "Sara", new: false},
+	{neme: "Sami", new: false},
+	{neme: "Masoti", new: true},
+]
+
+let ul = document.querySelector("ul")
+
+people.forEach(p => {
+	ul.innerHTML += `<li>${p.name}</li>`
 })

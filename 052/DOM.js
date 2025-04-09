@@ -3,7 +3,7 @@
 // console.log(header)
 // header.style.color = 'red'
 
-let contents = document.getElementsByClassName('content')
+// let contents = document.getElementsByClassName('content')
 
 // console.log(contents[1])
 // contents[0].style.fontSize = '25px'
@@ -28,12 +28,22 @@ let contents = document.getElementsByClassName('content')
 // })
 
 // let contents = document.querySelectorAll(".content")
-// Array.from(contents).forEach(content => {
-// 	content.style.color = 'tomato'
+// contents.forEach(content => {
+// 	content.style.color = 'blue'
 // })
+
+let contents = document.getElementsByClassName('content')
+// contents.forEach(content => {      اشتباه
+Array.from(contents).forEach(content => {
+	content.style.color = 'tomato'
+})
 
 // console.log(contents)
 
-let costome_query = document.querySelector("div.content:nth-child(2) > ul:nth-child(2) > li:nth-child(2)")
-costome_query.style.color = 'green'
-costome_query.style.fontSize = '20px'
+let custome_query = document.querySelector("div.content:nth-child(2) > ul:nth-child(2) > li:nth-child(2)")
+custome_query.style.color = 'green'
+custome_query.style.fontSize = '20px'
+
+
+
+#header

@@ -1,15 +1,16 @@
 // let lists = document.querySelectorAll("li")
 
 // lists.forEach(list => {
+// 	// console.log(list.innerText)
 // 	// list.innerText += " new"
-// 	// list.innerHTML += ` <span class="badge badge-danger">new</span>`
-// 	list.textContent += " new"
+// 	list.innerHTML += ` <span class="badge badge-danger">new</span>`
+// 	// list.textContent += " new"
 // })
 
 // let list = document.querySelector("li")
 
-// console.log(list.innerText)
-// console.log(list.textContent)
+// console.log(list.innerText);
+// console.log(list.textContent);
 
 let lists = document.querySelectorAll("li")
 
