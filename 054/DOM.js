@@ -22,14 +22,35 @@
 
 
 let people = [
-	{neme: "Masoud", new: true},
-	{neme: "Sara", new: false},
-	{neme: "Sami", new: false},
-	{neme: "Masoti", new: true},
+	{name: "Masoud", new: true},
+	{name: "Sara", new: false},
+	{name: "Vahid", new: false},
+	{name: "Atabak", new: true},
 ]
 
 let ul = document.querySelector("ul")
 
-people.forEach(p => {
-	ul.innerHTML += `<li>${p.name}</li>`
-})
+// people.forEach(p => {
+// 	ul.innerHTML += `<li>${p.name}</li>`
+// })
+
+// people.forEach(p => {
+// 	if (p.new) {
+// 		ul.innerHTML += `<li>${p.name} <span class="badge badge-danger">new</span></li>`
+// 	} else {
+// 		ul.innerHTML += `<li>${p.name}</li>`
+// 	}
+// })
+
+function create_navbar (people) {
+	let ul = document.querySelector("ul")
+	ul.innerHTML = ""
+	people.forEach(p => {
+		if (p.new) {
+			ul.innerHTML += `<li>${p.name} <span class="badge badge-danger">new</span></li>`
+		} else {
+			ul.innerHTML += `<li>${p.name}</li>`
+		}
+	})
+}
+
